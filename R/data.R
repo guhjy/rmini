@@ -1,13 +1,18 @@
-## how to document datasets: you need to specify @docType and @name; do not
-## forget NULL in the end
-
-#' Some random data
+#' @title Some random data
 #' 
-#' A few numbers from \code{rnorm()}.
+#' @description A few numbers from \code{rnorm()} put into a matrix.
 #' @docType data
-#' @name hiNorm
-#' @format A numeric vector.
-#' @source Generated from \code{set.seed(123); rnorm(10)}
-#' @examples data(hiNorm)
-#' str(hiNorm)
+#' @name data1
+#' @format A numeric matrix
+#' @source Generated from \code{set.seed(1); matrix(rnorm(10), ncol=2)}
+#' @examples data(data1)
+#' str(data1)
+NULL
+
+#' @rdname data1
+#' @name data2
+NULL
+
+#' @rdname data1
+#' @name data3
 NULL
